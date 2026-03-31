@@ -13,10 +13,10 @@ export function HeroSection() {
       <div className="hero-mesh pointer-events-none absolute inset-0" />
       <div className="pointer-events-none absolute inset-x-0 top-24 h-px bg-gradient-to-r from-transparent via-white/24 to-transparent" />
       <Container className="relative">
-        <div className="grid gap-10 xl:grid-cols-[minmax(0,1.1fr)_430px] xl:items-end">
-          <Reveal className="space-y-8 md:space-y-10">
+        <div className="grid gap-8 xl:grid-cols-[minmax(0,1.1fr)_430px] xl:items-end">
+          <Reveal className="space-y-7 md:space-y-10">
             <div className="space-y-5 md:space-y-6">
-              <h1 className="max-w-5xl text-balance text-[2.85rem] font-semibold tracking-[-0.065em] text-white sm:text-5xl md:text-7xl lg:text-[5.9rem] lg:leading-[0.94]">
+              <h1 className="max-w-5xl text-balance text-[2.5rem] font-semibold tracking-[-0.065em] text-white sm:text-5xl md:text-7xl lg:text-[5.9rem] lg:leading-[0.94]">
                 {siteContent.person.name}
               </h1>
               <h2 className="max-w-4xl text-balance text-xl font-medium tracking-[-0.04em] text-white/88 sm:text-2xl md:text-4xl md:leading-[1.04]">
@@ -26,6 +26,20 @@ export function HeroSection() {
                 {siteContent.person.subheadline}
               </p>
             </div>
+
+            <Reveal delay={0.1} className="xl:hidden">
+              <div className="relative mx-auto max-w-[17.5rem] overflow-hidden rounded-[1.75rem] border border-white/10 bg-black/30 shadow-[0_24px_70px_rgba(0,0,0,0.45)]">
+                <div className="absolute inset-0 rounded-[1.75rem] ring-1 ring-white/10 ring-inset" />
+                <Image
+                  src={siteContent.person.image.src}
+                  alt={siteContent.person.image.alt}
+                  width={900}
+                  height={1100}
+                  priority
+                  className="aspect-[4/5] w-full object-cover object-[50%_18%]"
+                />
+              </div>
+            </Reveal>
 
             <div className="grid gap-3 sm:flex sm:flex-wrap sm:gap-4">
               <Button href={siteContent.person.primaryCta.href} className="w-full sm:w-auto">
@@ -77,7 +91,7 @@ export function HeroSection() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.15} className="xl:-translate-y-10">
+          <Reveal delay={0.15} className="hidden xl:block xl:-translate-y-10">
             <div className="space-y-5">
               <div className="relative mx-auto max-w-[24rem] overflow-hidden rounded-[2rem] border border-white/10 bg-black/30 shadow-[0_35px_100px_rgba(0,0,0,0.5)] md:max-w-none md:rounded-[2.8rem]">
                 <div className="absolute inset-0 rounded-[2rem] ring-1 ring-white/10 ring-inset md:rounded-[2.8rem]" />

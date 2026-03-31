@@ -16,10 +16,10 @@ export function WinsSection() {
           />
         </Reveal>
 
-        <div className="mt-14 grid gap-5 xl:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:mt-14 md:gap-5 xl:grid-cols-3">
           {siteContent.caseStudies.map((study, index) => (
             <Reveal key={study.title} delay={index * 0.05}>
-              <article className="glass-panel h-full rounded-[2rem] p-7">
+              <article className="glass-panel h-full rounded-[1.7rem] p-5 md:rounded-[2rem] md:p-7">
                 {study.brand ? (
                   study.logo ? (
                     <div className="mb-5 flex justify-center rounded-[1.2rem] border border-white/8 bg-black/20 px-4 py-3">
@@ -62,36 +62,36 @@ export function WinsSection() {
                 <p className="text-xs font-semibold tracking-[0.28em] text-white/55 uppercase">
                   Selected case {String(index + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mt-5 text-3xl font-semibold tracking-[-0.05em] text-white">
+                <h3 className="mt-4 text-2xl font-semibold tracking-[-0.05em] text-white md:mt-5 md:text-3xl">
                   {study.title}
                 </h3>
 
-                <div className="mt-8 space-y-6">
+                <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
                   <div>
                     <p className="text-xs font-semibold tracking-[0.24em] text-[var(--accent-soft)] uppercase">
                       Challenge
                     </p>
-                    <p className="mt-2 text-base leading-7 text-white/64">{study.challenge}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/64 md:text-base md:leading-7">{study.challenge}</p>
                   </div>
                   <div>
                     <p className="text-xs font-semibold tracking-[0.24em] text-[var(--accent-soft)] uppercase">
                       Action
                     </p>
-                    <p className="mt-2 text-base leading-7 text-white/64">{study.action}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/64 md:text-base md:leading-7">{study.action}</p>
                   </div>
                   <div>
                     <p className="text-xs font-semibold tracking-[0.24em] text-[var(--accent-soft)] uppercase">
                       Result
                     </p>
-                    <p className="mt-2 text-base leading-7 text-white/64">{study.result}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/64 md:text-base md:leading-7">{study.result}</p>
                   </div>
                 </div>
 
-                <div className="mt-8 rounded-[1.5rem] border border-white/8 bg-black/25 p-5">
+                <div className="mt-6 rounded-[1.3rem] border border-white/8 bg-black/25 p-4 md:mt-8 md:rounded-[1.5rem] md:p-5">
                   <p className="text-xs font-semibold tracking-[0.24em] text-white/70 uppercase">
                     Business impact
                   </p>
-                  <p className="mt-3 text-base leading-7 text-white/68">{study.impact}</p>
+                  <p className="mt-3 text-sm leading-6 text-white/68 md:text-base md:leading-7">{study.impact}</p>
                 </div>
               </article>
             </Reveal>
