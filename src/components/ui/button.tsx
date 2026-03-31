@@ -24,7 +24,7 @@ export function Button({
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
       className={cn(
-        "group inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold tracking-[0.16em] uppercase transition-all duration-300",
+        "group inline-flex items-center justify-center rounded-full border px-4 py-3 text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 md:px-5 md:text-sm md:tracking-[0.16em]",
         variant === "primary" &&
           "border-white/20 bg-white text-black shadow-[0_8px_30px_rgba(255,255,255,0.14)] hover:-translate-y-0.5 hover:bg-white/92",
         variant === "secondary" &&

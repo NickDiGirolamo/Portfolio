@@ -16,21 +16,21 @@ export function ExperienceSection() {
           />
         </Reveal>
 
-        <div className="relative mt-16 space-y-8 before:absolute before:top-0 before:bottom-0 before:left-4 before:w-px before:bg-gradient-to-b before:from-transparent before:via-white/16 before:to-transparent md:before:left-1/2">
+        <div className="relative mt-12 space-y-6 before:absolute before:top-0 before:bottom-0 before:left-3 before:w-px before:bg-gradient-to-b before:from-transparent before:via-white/16 before:to-transparent md:mt-16 md:space-y-8 md:before:left-1/2">
           {siteContent.experience.map((item, index) => (
             <Reveal key={`${item.company}-${item.role}`} delay={index * 0.06}>
               <div className="relative grid gap-4 md:grid-cols-2 md:gap-10">
                 <div className={index % 2 === 0 ? "md:pr-12" : "md:order-2 md:pl-12"}>
-                  <div className="glass-panel rounded-[2rem] p-7">
+                  <div className="glass-panel rounded-[1.7rem] p-5 md:rounded-[2rem] md:p-7">
                     <p className="text-xs font-semibold tracking-[0.3em] text-white/42 uppercase">
                       {item.timeframe}
                     </p>
-                    <h3 className="mt-5 text-3xl font-semibold tracking-[-0.05em] text-white">
+                    <h3 className="mt-4 text-2xl font-semibold tracking-[-0.05em] text-white md:mt-5 md:text-3xl">
                       {item.role}
                     </h3>
-                    <p className="mt-2 text-lg text-[var(--accent-soft)]">{item.company}</p>
-                    <p className="mt-5 text-base leading-7 text-white/62">{item.summary}</p>
-                    <ul className="mt-6 space-y-3 text-sm leading-7 text-white/58">
+                    <p className="mt-2 text-base text-[var(--accent-soft)] md:text-lg">{item.company}</p>
+                    <p className="mt-4 text-sm leading-6 text-white/62 md:mt-5 md:text-base md:leading-7">{item.summary}</p>
+                    <ul className="mt-5 space-y-3 text-sm leading-6 text-white/58 md:mt-6 md:leading-7">
                       {item.achievements.map((achievement) => (
                         <li key={achievement} className="flex gap-3">
                           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
@@ -38,7 +38,7 @@ export function ExperienceSection() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-6 rounded-[1.5rem] border border-white/8 bg-black/25 px-4 py-4 text-sm leading-7 text-white/68">
+                    <div className="mt-5 rounded-[1.3rem] border border-white/8 bg-black/25 px-4 py-4 text-sm leading-6 text-white/68 md:mt-6 md:rounded-[1.5rem] md:leading-7">
                       {item.impact}
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export function ExperienceSection() {
                   </div>
                 </div>
 
-                <div className="absolute left-4 top-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border border-[var(--accent)]/45 bg-black shadow-[0_0_28px_rgba(113,217,255,0.45)] md:left-1/2">
+                <div className="absolute left-3 top-9 flex h-5 w-5 -translate-x-1/2 items-center justify-center rounded-full border border-[var(--accent)]/45 bg-black shadow-[0_0_28px_rgba(113,217,255,0.45)] md:left-1/2 md:top-10 md:h-6 md:w-6">
                   <div className="h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
                 </div>
               </div>
