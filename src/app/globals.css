@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #06070a;
+  --foreground: #f5f7fb;
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #71d9ff;
+  --accent-soft: #b8e7ff;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-instrument-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(113, 217, 255, 0.14), transparent 18%),
+    radial-gradient(circle at 86% 14%, rgba(133, 122, 255, 0.08), transparent 16%),
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.025), transparent 28%),
+    linear-gradient(180deg, #0a0c11 0%, #080a0f 24%, #06070a 58%, #050608 100%);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+body::before {
+  content: none;
+}
+
+body::after {
+  content: none;
+}
+
+::selection {
+  background: rgba(113, 217, 255, 0.26);
+  color: white;
+}
+
+.glass-panel {
+  position: relative;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.035));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.glass-panel::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 22%);
+}
+
+.hero-mesh {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(113, 217, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 80% 18%, rgba(255, 255, 255, 0.12), transparent 22%),
+    radial-gradient(circle at 50% 70%, rgba(113, 217, 255, 0.08), transparent 26%);
+  filter: blur(8px);
+}
+
+.section-spacing {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.display-serif {
+  font-family: var(--font-instrument-serif), serif;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

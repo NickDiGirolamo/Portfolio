@@ -1,0 +1,26 @@
+
+> executive-brand-site@0.1.0 dev
+> next dev --port 3002
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3002
+- Network:       http://192.168.0.4:3002
+✓ Ready in 296ms
+
+ GET / 200 in 2.0s (next.js: 1631ms, application-code: 386ms)
+ GET / 200 in 119ms (next.js: 8ms, application-code: 111ms)
+ GET / 200 in 134ms (next.js: 7ms, application-code: 128ms)
+ GET / 200 in 99ms (next.js: 50ms, application-code: 49ms)
+ GET / 200 in 88ms (next.js: 43ms, application-code: 45ms)
+ GET / 200 in 116ms (next.js: 64ms, application-code: 52ms)
+ GET / 200 in 113ms (next.js: 61ms, application-code: 52ms)
+ GET / 200 in 105ms (next.js: 51ms, application-code: 53ms)
+ GET / 200 in 9ms (next.js: 3ms, application-code: 5ms)
+ GET / 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET / 200 in 129ms (next.js: 66ms, application-code: 63ms)
+ GET / 200 in 91ms (next.js: 42ms, application-code: 49ms)
+ GET / 200 in 13ms (next.js: 4ms, application-code: 9ms)
+ GET / 200 in 101ms (next.js: 48ms, application-code: 53ms)
+ GET / 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET / 200 in 53ms (next.js: 3ms, application-code: 49ms)
+ GET / 200 in 47ms (next.js: 5ms, application-code: 43ms)

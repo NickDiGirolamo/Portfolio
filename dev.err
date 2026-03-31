@@ -1,0 +1,205 @@
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="manrope_de...">
+                          <body
+                            className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)]"
+-                           data-new-gr-c-s-check-loaded="14.1279.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="manrope_de...">
+                          <body
+                            className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)]"
+-                           data-new-gr-c-s-check-loaded="14.1280.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+ 
+Persisting failed: Unable to write SST file 00001100.sst
+
+Caused by:
+    The system cannot find the path specified. (os error 3)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\static\development\_buildManifest.js.tmp.rd99wcya4wh'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\static\\development\\_buildManifest.js.tmp.rd99wcya4wh'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\require.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\load-components.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\build\utils.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\routes-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\routes-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\require.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\load-components.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\build\utils.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\app\page\build-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\app\\page\\build-manifest.json'
+}
+⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\require.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\load-components.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\build\utils.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\node_modules\next\dist\server\lib\start-server.js
+    at Object.<anonymous> (C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\server\pages\_document.js:1:7) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\server\\pages\\_document.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\nickd\OneDrive\Desktop\Codex\executive-brand-site\.next\dev\routes-manifest.json'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\nickd\\OneDrive\\Desktop\\Codex\\executive-brand-site\\.next\\dev\\routes-manifest.json'
+}
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)

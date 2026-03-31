@@ -1,0 +1,9 @@
+Persisting failed: Unable to write SST file 00000172.sst
+
+Caused by:
+    The cloud operation was unsuccessful. (os error 389)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+^C

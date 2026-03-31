@@ -1,0 +1,18 @@
+
+> executive-brand-site@0.1.0 dev
+> next dev --port 3002 --webpack
+
+▲ Next.js 16.2.1 (webpack)
+- Local:         http://localhost:3002
+- Network:       http://192.168.0.4:3002
+✓ Ready in 279ms
+
+○ Compiling / ...
+ GET / 200 in 4.0s (next.js: 3.8s, application-code: 256ms)
+ GET / 200 in 110ms (next.js: 4ms, application-code: 106ms)
+ GET / 200 in 108ms (next.js: 4ms, application-code: 104ms)
+ GET / 200 in 51ms (next.js: 2ms, application-code: 49ms)
+ GET / 200 in 132ms (next.js: 48ms, application-code: 84ms)
+ GET / 200 in 129ms (next.js: 51ms, application-code: 78ms)
+ GET / 200 in 140ms (next.js: 51ms, application-code: 89ms)
+ GET / 200 in 125ms (next.js: 45ms, application-code: 80ms)
