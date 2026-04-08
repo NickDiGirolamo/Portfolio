@@ -85,16 +85,16 @@ export const siteContent = {
       description: "Faster execution across quoting, handoffs, and commercial workflows.",
     },
     {
-      value: 12,
+      value: 3,
       suffix: "x",
-      label: "Regional coverage expansion",
-      description: "Significantly broadened market presence through ecosystem expansion.",
+      label: "Channel engagement increase",
+      description: "Improved partner activity through new tools, incentives, and enablement programs.",
     },
     {
-      value: 6,
-      suffix: "",
-      label: "New Markets Activated",
-      description: "Opened new growth corridors through coordinated market activation.",
+      value: 10,
+      suffix: "+",
+      label: "Channel Partner Tools Launched",
+      description: "Introduced practical tools that improved partner execution, visibility, and program adoption.",
     },
   ],
   about: {
