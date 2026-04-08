@@ -22,7 +22,13 @@ export function WinsSection() {
               <article className="glass-panel h-full rounded-[1.7rem] p-5 md:rounded-[2rem] md:p-7">
                 {study.brand ? (
                   study.logo ? (
-                    <div className="mb-5 flex justify-center rounded-[1.2rem] border border-white/8 bg-black/20 px-4 py-3">
+                    <div
+                      className={`mb-5 flex justify-center rounded-[1.2rem] px-4 py-3 ${
+                        study.logo.alt === "Ethos Mask logo"
+                          ? "border border-transparent bg-transparent"
+                          : "border border-white/8 bg-black/20"
+                      }`}
+                    >
                       <img
                         src={study.logo.src}
                         alt={study.logo.alt}

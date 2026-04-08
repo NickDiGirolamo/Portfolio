@@ -48,7 +48,13 @@ export function ExperienceSection() {
                   <div className="hidden h-full items-center md:flex">
                     <div className="w-full rounded-[2rem] border border-white/8 bg-gradient-to-br from-white/[0.08] to-white/[0.02] p-7">
                       {item.logo ? (
-                        <div className="mb-5 flex min-h-[96px] items-center justify-center overflow-hidden rounded-[1.4rem] border border-white/8 bg-black/20 px-4 py-3">
+                        <div
+                          className={`mb-5 flex min-h-[96px] items-center justify-center overflow-hidden rounded-[1.4rem] px-4 py-3 ${
+                            item.logo.alt === "Ethos Mask logo"
+                              ? "border border-transparent bg-transparent"
+                              : "border border-white/8 bg-black/20"
+                          }`}
+                        >
                           <img
                             src={item.logo.src}
                             alt={item.logo.alt}

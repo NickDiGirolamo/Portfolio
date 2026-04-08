@@ -183,7 +183,7 @@ export const siteContent = {
       company: "Ethos Mask",
       role: "Co-Founder, COO",
       logo: {
-        src: "/ethos-mask-clean.jpg",
+        src: "/ethos-mask-clean-transparent.png",
         alt: "Ethos Mask logo",
       },
       timeframe: "Feb 2020 - Jan 2022",
@@ -281,7 +281,7 @@ export const siteContent = {
       brand: "Ethos Mask",
       brandColor: "teal",
       logo: {
-        src: "/ethos-mask-clean.jpg",
+        src: "/ethos-mask-clean-transparent.png",
         alt: "Ethos Mask logo",
       },
       title: "Co-founded Ethos Mask to deliver safer, lower-waste protective equipment during COVID-19",
