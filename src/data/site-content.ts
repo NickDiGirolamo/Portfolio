@@ -54,7 +54,7 @@ export const siteContent = {
   ],
   heroStats: [
     { value: "5+", label: "Years Leading Commercial Growth" },
-    { value: "7", label: "Figure channel opportunities shaped" },
+    { value: "$42M", label: "of pipeline influenced" },
     { value: "40%", label: "YoY Revenue Growth" },
     { value: "50+", label: "Partners activated" },
   ],
