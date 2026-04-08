@@ -345,21 +345,21 @@ export const siteContent = {
   testimonials: [
     {
       quote:
-        "Nicholas combines operator discipline with frontline commercial instincts. He sees the system, not just the deal.",
-      name: "Manager Name",
-      title: "Former VP of Sales",
+        "When working with Nick you can count on 3 things: (i) he will give 100 percent all the time, (ii) he will deliver high quality and high value externally and internally and (iii) he will do it all with a great attitude. Nick consistently makes things better for those around him, be it prospects, clients or colleagues. He takes initiative. He provides cogent insight. He offers pragmatic solutions. He is equally comfortable working in a structured environment or creating something from the ground up. That's why everyone wants to work with Nick. He can do it all and in a way that benefits all involved.",
+      name: "Paul Terry",
+      title: "SVP of Sales, EV Connect",
     },
     {
       quote:
-        "He brought structure, momentum, and credibility to partner conversations that had previously been inconsistent and reactive.",
-      name: "Partner Name",
-      title: "Strategic Channel Partner",
+        "I worked with Nick frequently for the last 3 years while he was at EV Connect. Nick knows how to build a relationship with his partners and understands what it takes to drive success and revenue across the channel. Nick is Professional, Hardworking, Patient, and knows how to get the job done under pressure. He is a problem solver. You can rely on Nick to look at a process, ask the tough questions, and adapt to the ever-changing landscape of EV Charging. I highly recommend Nick if you are looking for a giant in the industry with a lot of years ahead of him. Any company would be lucky to have him and his skills will make an immediate impact.",
+      name: "Jake Lueck",
+      title: "VP of Sales, EV United",
     },
     {
       quote:
-        "One of the rare leaders who can move comfortably from technical details to executive-level commercial positioning in the same conversation.",
-      name: "Peer Name",
-      title: "Cross-Functional Executive Partner",
+        "I had the opportunity, nay privilege, of working alongside Nick for nearly two years, and he is the kind of colleague every marketer hopes to have as a partner. His rare combination of kindness, intelligence, strategic positioning and genuine availability made it so he's always ready to problem-solve, whether with a client or across internal teams. What truly sets Nick apart is his ability to communicate seamlessly between clients and the broader organization, translating needs and insights in both directions with clarity and care. He approaches every challenge with thoughtfulness and tireless dedication. If you are looking for someone who will take ownership, drive results, and elevate your organization, Nick is exactly who you need.",
+      name: "Matt Schaeffer",
+      title: "Channel Marketing Strategy, EV Connect",
     },
   ],
   contact: {
