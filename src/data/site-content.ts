@@ -361,6 +361,12 @@ export const siteContent = {
       name: "Matt Schaeffer",
       title: "Channel Marketing Strategy, EV Connect",
     },
+    {
+      quote:
+        "I had the pleasure of working with Nick for nearly 4 years, and he consistently showcased deep knowledge of the technology alongside a strong ability to put the customer first. We built a highly collaborative environment that helped not only us realize our goals, but our clients as well.",
+      name: "Hunter Hale",
+      title: "Senior Manager of Customer Programs, Schneider Electric / EV Connect",
+    },
   ],
   contact: {
     title: "Let’s connect around growth, partnerships, and leadership opportunities.",
