@@ -367,7 +367,7 @@ export const siteContent = {
     description:
       "Use this section for recruiter outreach, executive opportunities, advisory conversations, or strategic partnerships.",
     email: "NickDiGirolamo4@gmail.com",
-    linkedin: "https://www.linkedin.com/in/nicholas-digirolamo/",
+    linkedin: "https://www.linkedin.com/in/nicholas-digirolamo",
     resume: "#",
   },
   footer: {
