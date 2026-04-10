@@ -15,7 +15,11 @@ export function SiteNav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 pt-4">
       <Container>
-        <div className="rounded-full border border-white/10 bg-black/40 px-4 py-3 shadow-[0_20px_80px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
+        <div
+          className={`border border-white/10 bg-black/40 px-4 py-3 shadow-[0_20px_80px_rgba(0,0,0,0.45)] backdrop-blur-2xl transition-[border-radius] duration-300 ${
+            open ? "rounded-[2rem] lg:rounded-full" : "rounded-full"
+          }`}
+        >
           <div className="flex items-center justify-between gap-4">
             <Link href="#home" className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-white/8 text-sm font-semibold tracking-[0.24em] text-white uppercase">
@@ -77,4 +81,3 @@ export function SiteNav() {
     </header>
   );
 }
-
